@@ -1,0 +1,65 @@
+body{
+    background-image: url(img/bg1.webp);
+    background-size: cover;
+    /*to not have extra space in the side of the website*/
+    margin: 0; 
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    border-bottom: 2px solid rgb(84, 127, 142);
+    padding: 25px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar, a{
+    padding-inline: 15px;/*basically padding (space inside an element) but only for the left and right sides, NOT top and bottom.*/
+    color: rgb(70, 109, 169);
+
+}
+
+.Shairaimg{
+    padding-left: 150px;
+}
+img{
+    width: 30vw;/*vw is used so that img's size changes according to the webpage size */
+    height: auto;
+    transition: transform 0.5s ease;
+    clip-path: circle(40%);
+}
+ img:hover{
+   transform: scale(0.9) ;/*0.9 0.1 in 0.9< out*/
+}
+.intro{
+    display: flex;
+    justify-content: start;
+}
+.name{
+    font-size: medium;
+    color: aliceblue;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-490px);
+}
+.transition {
+    width: 600px;
+    height: 500px;
+    background: rgb(40, 61, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper:hover {
+    transform: translateX(0px);
+    transition: all 5s ease-out;
+  }
+  .transition p{
+    transition: all 2s ease-in;
+  }
+
