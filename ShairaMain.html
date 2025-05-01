@@ -1,14 +1,209 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ShairaStyle.css">
-    <title>Shaira Gurung Portfolio</title>
+    <title>Saiira Gurung Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap">
+    <style>
+        .minimal-portfolio {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .minimal-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .minimal-name {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        .minimal-title {
+            font-size: 1.2rem;
+            color: #777;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .experience-section {
+            margin-bottom: 60px;
+        }
+
+        .experience-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .experience-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: #333;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .experience-item h4 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .experience-item p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .minimal-about {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .minimal-about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .minimal-about-content h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .minimal-about-content h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 1px;
+            background-color: #333;
+        }
+
+        .minimal-about-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .minimal-contact {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .minimal-social {
+            margin-top: 10px;
+        }
+
+        .minimal-social a {
+            color: #333;
+            transition: color 0.3s;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .minimal-social a:hover {
+            color: #999;
+        }
+
+        /* Profile Photo Styles */
+        .profile-photo-section {
+            margin: 60px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-photo-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05);
+        }
+
+        .change-photo-btn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            border: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .profile-photo-container:hover .change-photo-btn {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-<!--navbar start-->
+<!-- Main LEROY Header -->
+<header>
+    <div>LEROY</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="research.html">RESEARCH</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Saiira's navbar -->
 <div class="navbar">
     <nav>
         <a href="#">About</a>
@@ -16,24 +211,59 @@
         <a href="#">Contact</a>
     </nav>
 </div>
-<!--navbar end-->
-<!--intro start-->
-<br>
-<div class="intro">
-    <div class="wrapper">
-    <div class="transition "> 
-        <p class="name">
-            shaira
-        </p>
+
+<!-- Main content -->
+<div class="content-container">
+    <!-- Left block -->
+    <div class="animated-block left-block">
+        <div class="block-content">
+            <h2>Lorem ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
     </div>
-    <div class="Shairaimg">
-        <img src="img/IMG_1168 (1).jpeg" alt="Shaira Gurung photo" class="shaira_profile">
+
+    <!-- Center image -->
+    <div class="center-image">
+        <img src="img/IMG_1168 (1).jpeg" alt="Saiira Gurung photo" class="saiira-profile">
+    </div>
+
+    <!-- Right block -->
+    <div class="animated-block right-block">
+        <div class="block-content">
+            <h2>Lorem ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
     </div>
 </div>
-</div>
-<!--intro end-->
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 LEROY Footwear. All rights reserved.</p>
+        <p>Quality footwear for every occasion.</p>
+    </div>
+</footer>
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Animate blocks after a short delay
+        setTimeout(() => {
+            const leftBlock = document.querySelector(".left-block")
+            const rightBlock = document.querySelector(".right-block")
 
+            if (leftBlock) {
+                leftBlock.style.transform = "translateX(0)"
+                leftBlock.style.opacity = "1"
+            }
+
+            if (rightBlock) {
+                rightBlock.style.transform = "translateX(0)"
+                rightBlock.style.opacity = "1"
+            }
+        }, 300)
+    })
+
+</script>
 </body>
 </html>
